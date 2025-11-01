@@ -174,6 +174,7 @@ Lookup complete. GL KING/QUEEN!
 ## Tech + Learning Focus
 Learning focus: This project was my very first introduction into using Python code. My goal was to get more comfortable with basic introductory techniques like file handling, data structure, and user interface logic. The idea was to connect my self-taught programming education with real-world pharmacy applications that will be useful as I pursue my PharmD education. 
 
+
 ## Progress Toward Top 300
 
 **Current Coverage:** 100/300 drugs (33%)
@@ -191,6 +192,19 @@ Learning focus: This project was my very first introduction into using Python co
 - Respiratory (Beta-2 agonists, Leukotriene antagonists)
 - And more...
 
+## Version History
+
+**v1.1** (November 2, 2025)
+- Expanded database from 60 to 100 drugs
+- Added cardiovascular medications (ACE inhibitors, ARBs, Beta blockers)
+- Added SGLT2 inhibitors for diabetes
+- Added additional antiarrhythmics and anticoagulants
+
+**v1.0** (October 31, 2025)
+- Initial release with 60 drugs
+- 7 search features
+- Drug comparison functionality
+- Controlled substance tracking
 
 ## About
 
