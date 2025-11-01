@@ -1,7 +1,7 @@
 # Pharmacy Drug Information Lookup Tool
 **Version:** 1.0.0  
 **Last Updated:** October 2025
-A comprehensive drug reference tool with 60+ medications, built for pharmacy students to quickly lookup drug information, compare medications, and study for exams. Expanding toward 300-drug coverage.
+A comprehensive drug reference tool with 100 medications (targeting top 300), built for pharmacy students to quickly lookup drug information, compare medications, and study for exams. Expanding toward 300-drug coverage.
 
 ## Features
 **Search and Analysis Options**
@@ -13,7 +13,7 @@ A comprehensive drug reference tool with 60+ medications, built for pharmacy stu
 6. **Top 10 most prescribed** - View highest-volume medications
 7. **Side-by-side comparison** - Compare two drugs across all fields
 **Current Database:**
-- 60 drugs across major therapeutic classes
+- 100 drugs across major therapeutic classes (33% toward top 300 goal)
 - Cardiac, diabetes, pain management, mental health medications
 - 6 controlled substances with safety warnings
 - Brand names and generic information
@@ -173,6 +173,24 @@ Lookup complete. GL KING/QUEEN!
 
 ## Tech + Learning Focus
 Learning focus: This project was my very first introduction into using Python code. My goal was to get more comfortable with basic introductory techniques like file handling, data structure, and user interface logic. The idea was to connect my self-taught programming education with real-world pharmacy applications that will be useful as I pursue my PharmD education. 
+
+## Progress Toward Top 300
+
+**Current Coverage:** 100/300 drugs (33%)
+
+**Last Updated:** November 2, 2025
+
+**Drug Classes Covered:**
+- Cardiovascular (ACE inhibitors, ARBs, Beta blockers, Calcium channel blockers, Diuretics, Antiarrhythmics, Anticoagulants, Antiplatelets)
+- Diabetes (Metformin, Sulfonylureas, SGLT2 inhibitors, Insulin)
+- Statins & Lipid-Lowering Agents
+- Mental Health (SSRIs, SNRIs, Atypical antidepressants, Benzodiazepines, Antipsychotics)
+- Pain Management (NSAIDs, Opioids, Muscle relaxants)
+- Antibiotics (Penicillins, Macrolides, Fluoroquinolones, Tetracyclines)
+- GI (PPIs, H2 blockers, Antiemetics)
+- Respiratory (Beta-2 agonists, Leukotriene antagonists)
+- And more...
+
 
 ## About
 
