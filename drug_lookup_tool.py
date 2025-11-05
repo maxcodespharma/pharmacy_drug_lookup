@@ -1026,6 +1026,22 @@ def display_drug_info(drug_name, drug_data):
 
     print("=" * 60)
 
+def search_drugs(search_term):
+    """Search for drugs by partial name match"""
+    search_term = search_term.lower() # Convert to lowercase for case-insensitive search
+    results = [] # Empty list to store matches
+
+    for drug_name in drug_database: # Loop through all drug names in your dictionary
+        if search_term in drug_name.lower(): # Check if search term is in drug name
+            results.append(drug_name) # Add matching drug to results list
+
+    if results: # If we found matches
+        print(f"\nFound {len(results)} match(es):")
+        for drug in results:
+            print(f"- {drug}")
+    else: 
+        print(f"\nNo drugs found matching '{search_term}'")
+
 
 def search_drugs_by_class(drug_class):
     """Find all drugs in a specific class"""
@@ -1176,8 +1192,9 @@ print("4. View controlled substances only")
 print("5. Search by medical condition")
 print("6. View Top 10 most prescribed drugs")
 print("7. Compare two drugs side-by-side")
+print("8. Search by partial name")
 
-choice = input("\nEnter choice (1-7): ")
+choice = input("\nEnter choice (1-8): ")
 
 if choice == "1":
     drug_name = input("Enter drug name: ").lower().strip()
@@ -1272,6 +1289,10 @@ elif choice == "7":
     if not success:
         print(f"\n❌ Error: {error}")
         print("Available drugs:", ", ".join(sorted(drug_database.keys())[:10]), "...")
+
+elif choice == "8":
+    search_term = input("Enter partial drug name to search: ")
+    search_drugs(search_term)
 
 else: 
     print("\n❌ Invalid choice")
