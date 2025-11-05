@@ -12,6 +12,7 @@ A comprehensive drug reference tool with 100 medications (targeting top 300), bu
 5. **Search by medical condition** - Find drugs treating specific conditions
 6. **Top 10 most prescribed** - View highest-volume medications
 7. **Side-by-side comparison** - Compare two drugs across all fields
+8. **Partial name search** - Search drugs by portion of name (case-insensitive)
 **Current Database:**
 - 100 drugs across major therapeutic classes (33% toward top 300 goal)
 - Cardiac, diabetes, pain management, mental health medications
@@ -91,10 +92,11 @@ Options:
 5. Search by medical condition
 6. View Top 10 most prescribed drugs
 7. Compare two drugs side-by-side
+8. Search by partial name
 '''
 
 **Single Drug Lookup**
-Enter choice (1-7): 1
+Enter choice (1-8): 1
 Enter drug name: metformin
 
 ============================================================
@@ -113,7 +115,7 @@ Lookup complete. GL KING/QUEEN!
 
 **Drug Comparison**
 
-Enter choice (1-7): 7
+Enter choice (1-8): 7
 
 --- DRUG COMPARISON ---
 Enter first drug name: methylprednisolone
