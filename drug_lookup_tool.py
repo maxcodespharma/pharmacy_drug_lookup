@@ -1028,6 +1028,10 @@ def display_drug_info(drug_name, drug_data):
 
 def search_drugs(search_term):
     """Search for drugs by partial name match"""
+    if not search_term or search_term.strip() == "":
+            print("\n❌ Error: Search term cannot be empty")
+            return
+
     search_term = search_term.lower() # Convert to lowercase for case-insensitive search
     results = [] # Empty list to store matches
 
@@ -1105,6 +1109,13 @@ def get_database_stats():
         'top_drug': top_drug,
         'top_brand': top_brand
     }
+
+
+def calculate_total_cost(quantity, price_per_unit):
+    """Calculate total cost of a prescription"""
+    total = quantity * price_per_unit
+    print(f"Total cost: ${total:.2f}")
+    return total
 
 def compare_drugs(drug1_name, drug2_name):
     """Display two drugs side-by-side for comparision"""
@@ -1193,8 +1204,9 @@ print("5. Search by medical condition")
 print("6. View Top 10 most prescribed drugs")
 print("7. Compare two drugs side-by-side")
 print("8. Search by partial name")
+print("9. Calculate total cost")
 
-choice = input("\nEnter choice (1-8): ")
+choice = input("\nEnter choice (1-9): ")
 
 if choice == "1":
     drug_name = input("Enter drug name: ").lower().strip()
@@ -1293,6 +1305,11 @@ elif choice == "7":
 elif choice == "8":
     search_term = input("Enter partial drug name to search: ")
     search_drugs(search_term)
+
+elif choice  == "9":
+    quantity = int(input("Enter quantity: "))
+    price_per_unit = float(input("Enter price/unit"))
+    calculate_total_cost(quantity, price_per_unit)
 
 else: 
     print("\n❌ Invalid choice")
